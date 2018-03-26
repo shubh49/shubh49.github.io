@@ -1,0 +1,43 @@
+# Site settings
+title: Shubham Aggarwal
+description: 'Hi There! Currently working at Olacabs and hacking with Big Data Technologies'
+url: 'http://shubhamaggarwal.com'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Shubham Aggarwal'
+  email: shubhamccdps@gmail.com
+  twitter_username: agshubh49
+  facebook_username: agshubh49
+  github_username:  shubh49
+  linkedin_username:  shubh49
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
